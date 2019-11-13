@@ -3,13 +3,11 @@ use std::sync::Arc;
 
 use crate::{endpoint::DynEndpoint, Context, Response};
 
-mod compression;
 mod cookies;
 mod cors;
 mod default_headers;
 mod logger;
 
-pub use compression::{Compression, Decompression};
 pub use cookies::CookiesMiddleware;
 pub use cors::{Cors, Origin};
 pub use default_headers::DefaultHeaders;
